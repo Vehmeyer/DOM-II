@@ -76,10 +76,25 @@ buttons.addEventListener('mouseup', function(event){
 })
 
 // const buttonsOne = document.querySelectorAll('.btn');
-// const buttonsArray = Array.from(buttons);
+// const buttonsArray = Array.from(buttonsOne);
 // buttonsArray.addEventListener('mouseup', function(event){
-//     buttonsArray.forEach(buttons => buttons.style.color = "green");
+//     buttonsArray.forEach(buttonsOne => buttonsOne.textContent = "Okay");
 // })
+
+// 10 - drag and drop
+
+
+// 11 - stop propagation
+
+Array.from(document.all).forEach((elem) => {
+    elem.addEventListener("click", (event) => {
+      console.log("first target:     ", event.target);
+      console.log("current target:", event.currentTarget);
+      console.log("\n");
+      event.stopPropagation();
+    });
+  });
+
 
 
 
