@@ -1,8 +1,6 @@
 // Your code goes here
-// * `load`
 // * `focus`
 // * `resize`
-// * `scroll`
 // * `select`
 // * `drag / drop`
 
@@ -57,7 +55,39 @@ document.addEventListener("keydown", down);
 
 document.addEventListener('scroll', function(event){
     document.body.style.backgroundColor = "initial";
-})
+});
+
+// 7- load
+
+window.addEventListener('load', function(event){
+    document.body.style.backgroundColor = 'red';
+});
+
+// 8 - oncopy
+
+window.addEventListener('copy', function(event){
+    alert("You copied it!");
+});
+
+// 8 - select
+
+
+// 7 - keyup
+
+// const keyUp = document.querySelector("")
+
+
+// 7 -
+// const dragPic = document.querySelectorAll("img");
+
+// dragPic.addEventListener('drag', function(event){
+//     dragPic.style.backgroundColor = "black";
+// })
+
+
+
+
+
 
 
 
