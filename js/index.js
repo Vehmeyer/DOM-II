@@ -1,8 +1,4 @@
 // Your code goes here
-// * `focus`
-// * `resize`
-// * `select`
-// * `drag / drop`
 
 // 1 - mouseover
 
@@ -81,8 +77,11 @@ buttons.addEventListener('mouseup', function(event){
 //     buttonsArray.forEach(buttonsOne => buttonsOne.textContent = "Okay");
 // })
 
-// 10 - drag and drop
+// 10 - resize
 
+window.addEventListener("resize", function(event){
+    document.body.style.backgroundColor = "pink";
+})
 
 // 11 - stop propagation
 
@@ -97,40 +96,3 @@ Array.from(document.all).forEach((elem) => {
 
 
 
-
-// 8 - select
-
-
-// 7 - keyup
-
-// const keyUp = document.querySelector("")
-
-
-// 7 -
-// const dragPic = document.querySelectorAll("img");
-
-// dragPic.addEventListener('drag', function(event){
-//     dragPic.style.backgroundColor = "black";
-// })
-
-
-
-
-
-
-
-
-
-
-
-//  3 - keypress
-
-// const keyPress = document.querySelector(".intro");
-// function press(event){
-//     if(event === "l") {
-//         keyPress.style.backgroundColor = "blue";
-//     }
-// }
-
-
-// document.addEventListener("keypress", press);
