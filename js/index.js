@@ -65,17 +65,18 @@ window.addEventListener('copy', function(event){
     alert("You copied it!");
 });
 
-//  9 - focus
-const buttons = document.querySelector(".btn")
-buttons.addEventListener('mouseup', function(event){
-    buttons.textContent = "Done";
-})
-
-// const buttonsOne = document.querySelectorAll('.btn');
-// const buttonsArray = Array.from(buttonsOne);
-// buttonsArray.addEventListener('mouseup', function(event){
-//     buttonsArray.forEach(buttonsOne => buttonsOne.textContent = "Okay");
+//  9 - mouseup
+// const buttons = document.querySelector(".btn")
+// buttons.addEventListener('mouseup', function(event){
+//     buttons.textContent = "Done";
 // })
+
+const button = document.querySelectorAll('.btn');
+button.forEach(b => {
+    b.addEventListener('mouseup', (event) => {
+        b.textContent = 'Done';
+    })
+})
 
 // 10 - resize
 
